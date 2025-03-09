@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Restricted Content Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fab fa-telegram"></i> TG Downloader
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#requirements">Requirements</a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#download" class="nav-download-btn">Download</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Telegram Restricted Content Downloader</h1>
+                    <p class="hero-description">Download restricted and non-restricted content from Telegram groups and channels with just a few clicks.</p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="download-btn">
+                            <i class="fas fa-download"></i> Download Now
+                        </a>
+                        <a href="#how-it-works" class="learn-more-btn">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/1.png" alt="Screenshot of the application" class="screenshot">
+                    <div class="blob"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Features</h2>
+                <p>Powerful tools to enhance your Telegram experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clipboard"></i>
+                    </div>
+                    <h3>Clipboard Monitoring</h3>
+                    <p>Detects and adds Telegram media links automatically as you copy them.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Restricted Downloads</h3>
+                    <p>Supports both private and public content from any Telegram channel or group.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pause"></i>
+                    </div>
+                    <h3>Queue Management</h3>
+                    <p>Collects links until you press enter to download all at once.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Reset Function</h3>
+                    <p>Clear the download list anytime with r + enter for a fresh start.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How it Works</h2>
+                <p>Simple, efficient, and user-friendly</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-copy"></i>
+                        <div class="step-number">1</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Copy Link</h3>
+                        <p>Copy any Telegram media link to your clipboard from any channel or group.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-plus-circle"></i>
+                        <div class="step-number">2</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Auto-Detection</h3>
+                        <p>The bot automatically detects the link and adds it to your download queue.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-download"></i>
+                        <div class="step-number">3</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Download</h3>
+                        <p>Once ready, press 'enter' to download all queued media to your device.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="example-interface">
+                <h3>Example Interface</h3>
+                <div class="interface-container">
+                    <img src="./assets/1.png" alt="Example interface" class="interface-img">
+                    <div class="interface-overlay">
+                        <div class="overlay-content">
+                            <h4>Simple Interface</h4>
+                            <p>Easy to use, powerful functionality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="requirements" id="requirements">
+        <div class="container">
+            <div class="section-header">
+                <h2>Requirements</h2>
+                <p>What you need to get started</p>
+            </div>
+            <div class="requirements-content">
+                <div class="requirements-text">
+                    <p>Ensure you have Python 3.8+ installed on your system. The application requires the following dependencies which will be installed automatically:</p>
+                    <ul class="requirements-list">
+                        <li><i class="fas fa-check-circle"></i> pyaes==1.6.1</li>
+                        <li><i class="fas fa-check-circle"></i> pyperclip==1.9.0</li>
+                        <li><i class="fas fa-check-circle"></i> pyrotgfork==2.1.35</li>
+                        <li><i class="fas fa-check-circle"></i> PySocks==1.7.1</li>
+                        <li><i class="fas fa-check-circle"></i> PyTgCrypto==1.2.6</li>
+                        <li><i class="fas fa-check-circle"></i> python-dotenv==1.0.1</li>
+                        <li><i class="fas fa-check-circle"></i> TgCrypto==1.2.5</li>
+                        <li><i class="fas fa-check-circle"></i> uvloop==0.19.0</li>
+                    </ul>
+                </div>
+                <div class="requirements-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Telegram API Credentials</h3>
+                    <p>You'll need to create a Telegram API application to get your API_ID and API_HASH.</p>
+                    <a href="https://my.telegram.org/auth" target="_blank" class="api-btn">Get API Credentials</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="usage" id="usage">
+        <div class="container">
+            <div class="section-header">
+                <h2>Usage</h2>
+                <p>Getting started is simple</p>
+            </div>
+            <div class="usage-steps">
+                <div class="usage-step">
+                    <div class="usage-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="usage-content">
+                        <h3>Create .env File</h3>
+                        <p>Create a .env file in the application folder with your Telegram credentials:</p>
+                        <div class="code-block">
+                            <pre><code>#Replace with your Telegram application credentials
+API_ID="YOUR_API_ID"
+API_HASH="YOUR_API_HASH"</code></pre>
+                            <button class="copy-btn" onclick="copyCode(this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="usage-step">
+                    <div class="usage-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="usage-content">
+                        <h3>Run the Application</h3>
+                        <p>Start the bot with the following command:</p>
+                        <div class="code-block">
+                            <pre><code>python app.py</code></pre>
+                            <button class="copy-btn" onclick="copyCode(this)">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download" id="download">
+        <div class="container">
+            <div class="section-header">
+                <h2>Download</h2>
+                <p>Get the Telegram Restricted Content Downloader now</p>
+            </div>
+            <div class="download-card">
+                <div class="download-icon">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <h3>Telegram Restricted Content Downloader</h3>
+                <p>Version 1.0.0</p>
+                <div class="download-buttons">
+                    <a href="#" class="download-btn" id="downloadBtn">
+                        <i class="fas fa-download"></i> Download for Windows
+                    </a>
+                    <div class="other-platforms">
+                        <a href="#" class="platform-link">Linux</a>
+                        <a href="#" class="platform-link">macOS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contributions" id="contributions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contributions</h2>
+                <p>Join our community</p>
+            </div>
+            <p class="contributions-text">Contributions are welcome. If you'd like to contribute, please fork the repository and create a pull request with your changes.</p>
+            <a href="https://github.com/victorjalonzo/Telegram-Restricted-Content-Downloader" target="_blank" class="github-btn">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+    </section>
+
+    <section class="license" id="license">
+        <div class="container">
+            <div class="section-header">
+                <h2>License</h2>
+                <p>Open source and free to use</p>
+            </div>
+            <p class="license-text">This project is licensed under the MIT License. See the LICENSE file for details.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fab fa-telegram"></i> TG Downloader
+                </div>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#requirements">Requirements</a>
+                    <a href="#usage">Usage</a>
+                    <a href="#download">Download</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/victorjalonzo/Telegram-Restricted-Content-Downloader" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Telegram Restricted Content Downloader. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-download">
+        <a href="#download" class="floating-download-btn">
+            <i class="fas fa-download"></i> Download
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
