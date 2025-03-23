@@ -1,6 +1,6 @@
-// Wait for the DOM to be fully loaded
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Mobile menu toggle
+
   const hamburger = document.querySelector(".hamburger")
   const navLinks = document.querySelector(".nav-links")
 
@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
           behavior: "smooth",
         })
 
-        // Close mobile menu if open
         if (window.innerWidth < 768 && navLinks.style.display === "flex") {
           navLinks.style.display = "none"
         }
@@ -57,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Function to copy code blocks
   window.copyCode = (button) => {
     const codeBlock = button.parentElement
     const code = codeBlock.querySelector("code").innerText
@@ -65,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navigator.clipboard
       .writeText(code)
       .then(() => {
-        // Change button icon temporarily to show success
+
         const originalIcon = button.innerHTML
         button.innerHTML = '<i class="fas fa-check"></i>'
 
@@ -78,22 +76,22 @@ document.addEventListener("DOMContentLoaded", () => {
       })
   }
 
-  // Download button click event
   const downloadBtn = document.getElementById("downloadBtn")
 
   if (downloadBtn) {
     downloadBtn.addEventListener("click", (e) => {
       e.preventDefault()
 
-      // Create a mock download alert
-      alert("Download started! Thank you for downloading Telegram Restricted Content Downloader.")
+      Swal.fire({
+        icon: 'warning',
+        title: 'Download Unavailable',
+        text: 'The software cannot be downloaded at the moment. Please try again later.',
+        confirmButtonText: 'Got it'
+      })
 
-      // In a real scenario, you would redirect to the actual download file
-      // window.location.href = 'path/to/your/download/file.zip';
     })
   }
 
-  // Animation on scroll
   const animateOnScroll = () => {
     const elements = document.querySelectorAll(".feature-card, .step, .usage-step, .requirements-card, .download-card")
 
@@ -108,7 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
-  // Initialize elements with opacity 0
   const elementsToAnimate = document.querySelectorAll(
     ".feature-card, .step, .usage-step, .requirements-card, .download-card",
   )
@@ -119,10 +116,8 @@ document.addEventListener("DOMContentLoaded", () => {
     element.style.transition = "opacity 0.6s ease, transform 0.6s ease"
   })
 
-  // Add scroll event listener
   window.addEventListener("scroll", animateOnScroll)
 
-  // Trigger scroll event to check initial visible elements
   window.dispatchEvent(new Event("scroll"))
 })
 
